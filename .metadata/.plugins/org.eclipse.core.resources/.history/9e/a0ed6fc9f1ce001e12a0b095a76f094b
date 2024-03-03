@@ -1,0 +1,21 @@
+package demo;
+@FunctionalInterface
+interface MyFunctionalInterface {
+    void myMethod(); // Abstract method
+    
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Using lambda expression to implement the interface
+        MyFunctionalInterface functionalInterface = () -> {
+            System.out.println("Executing myMethod");
+        };
+        functionalInterface.myMethod(); // Output: Executing myMethod
+    }
+    public static void main(int arg) {
+		System.out.println("#");
+	}
+
+}

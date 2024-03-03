@@ -1,0 +1,15 @@
+package demo;
+
+interface Main2 {
+    void myMethod(); // Abstract method
+}
+
+public class Main2 {
+    public static void main(String[] args) {
+        // Using lambda expression to implement the interface
+        Main functionalInterface = () -> {
+            System.out.println("Executing myMethod");
+        };
+        functionalInterface.myMethod(); // Output: Executing myMethod
+    }
+}
